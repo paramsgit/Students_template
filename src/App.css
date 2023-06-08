@@ -1,38 +1,93 @@
-.App {
+table,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 50px;
+    width: 350px;
+    text-align: center;
+}
+th{
+  border: 1px solid black;
+    border-collapse: collapse;
+    height: 40px;
+    width: 250px;
+}
+table{
+  z-index: 10;
+  margin-top: 40px;
+}
+.table{
+  z-index: 10;
+  position: relative;
+}
+/* #8ea0c6,#cfd5de */
+.outer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.inner{
+  width: 50%;
+  background-color: #8ea0c6;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 40px;
+  /* margin-top: 50px; */
+}
+.firstdiv{
+  padding: 30px;
+  margin-top: 20px;
+  background-color: #cfd5de;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.left,.right{
+  width: 50%;
+}
+.photodiv{
+  margin-left: 120px;
+  margin-top: -30px;
+  position: absolute;
+  padding: 10px 10px 45px 10px;
+  background-color: #f2f1eb;
+  border: 2px solid rgb(127, 127, 127);
+  display: flex;
+}
+.simage{
+  width: 230px;
+  height: 220px;
+}
+.thoughts{
+  position: absolute;
+  background-color: #b7c7d7;
+  margin-left: 143px;
+  margin-top: 225px;
+  width: 210px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.right{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.circle{
+  z-index: 1;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  position: absolute;
+  border-radius: 100px;
+  text-align: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  margin-left: -54px;
+    margin-top: -76px;
 }
