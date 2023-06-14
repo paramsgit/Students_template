@@ -1,11 +1,26 @@
 import React from 'react'
+import downloadjs from 'downloadjs';
+import html2canvas from 'html2canvas';
+import image from './image';
 
 export const Main = () => {
+const id='19191919';
+    const handleCaptureClick = async (props) => {
+        console.log(props.target.id)
+        const canvas = await html2canvas(document.getElementById(props.target.id));
+        const dataURL = canvas.toDataURL('image/png');
+        downloadjs(dataURL, 'download.png', 'image/png');
+      };
+
+
   return (
     <>
-    <div className="outer">
-<div className="inner">
-        <div className="firstdiv">
+    <div>
+    <div className="outer" id='19191919' >
+<div className="inner" >
+      
+
+        <div className="firstdiv" >
             <div className="left">
                 <div className="circle">
                     <p>19191919</p>
@@ -42,7 +57,7 @@ export const Main = () => {
             </div>
             <div className="right">
                 <div className="photodiv">
-                    <img className='simage' src="https://source.unsplash.com/random" alt="" />
+                    <img className='simage' src={image} alt="" />
 
                    
                 </div>
@@ -53,6 +68,12 @@ export const Main = () => {
         </div>
     </div>
     </div>
+
+
+    <button href="#" id='19191919' onClick={handleCaptureClick}>
+    Capture
+  </button>
+  </div>
     </>
   )
 }

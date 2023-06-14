@@ -1,93 +1,51 @@
-table,
-td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    height: 50px;
-    width: 350px;
-    text-align: center;
-}
-th{
-  border: 1px solid black;
-    border-collapse: collapse;
-    height: 40px;
-    width: 250px;
-}
-table{
-  z-index: 10;
-  margin-top: 40px;
-}
-.table{
-  z-index: 10;
-  position: relative;
-}
-/* #8ea0c6,#cfd5de */
-.outer{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
+.topleft{
+  padding-left: 6%;;
 }
-.inner{
-  width: 50%;
-  background-color: #8ea0c6;
+.sideimg{
+  width: 100%!important;
+}
+.simgdiv{
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-  padding: 40px;
-  /* margin-top: 50px; */
-}
-.firstdiv{
-  padding: 30px;
-  margin-top: 20px;
-  background-color: #cfd5de;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.left,.right{
-  width: 50%;
-}
-.photodiv{
-  margin-left: 120px;
-  margin-top: -30px;
-  position: absolute;
-  padding: 10px 10px 45px 10px;
-  background-color: #f2f1eb;
-  border: 2px solid rgb(127, 127, 127);
-  display: flex;
-}
-.simage{
-  width: 230px;
-  height: 220px;
-}
-.thoughts{
-  position: absolute;
-  background-color: #b7c7d7;
-  margin-left: 143px;
-  margin-top: 225px;
-  width: 210px;
-  height: 100px;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
-.right{
-  display: flex;
-  flex-direction: column;
+.sothis{
+  padding: 100px 0;
+  background-image: url('./components/files/drone3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -200px;
+  height: 100vh;
+  background-attachment: fixed;
 }
-.circle{
-  z-index: 1;
-  width: 130px;
-  height: 130px;
-  background-color: white;
-  position: absolute;
-  border-radius: 100px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: -54px;
-    margin-top: -76px;
+
+#transs2{
+  background: transparent !important;
+  border: none;
+ 
+}
+.lia{
+  transition: all 0.5s ease;
+}
+.text-black{
+  color: rgb(23, 23, 23)!important;
+}
+
+
+
+
+
+
+
+@media (max-width:600px){
+  .topleft{
+    padding: 0;
+  }
+  /* .sideimg{
+    width: 22rem;
+  } */
 }
